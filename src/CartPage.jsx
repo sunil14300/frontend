@@ -13,7 +13,7 @@ function CartPage() {
   useEffect(() => {
     const fetchCart = async () => {
       try {
-        const response = await axios.get("http://localhost:8081/api/cart");
+        const response = await axios.get("https://backend-3-5sxs.onrender.com/api/cart");
         setCart(response.data || []); // fallback to empty array
       } catch (error) {
         console.error("Error fetching cart:", error);
@@ -69,7 +69,7 @@ function CartPage() {
   // Remove from cart
   const handleRemove = async (id) => {
     try {
-      await axios.delete(`http://localhost:8081/api/cart/${id}`);
+      await axios.delete(`https://backend-3-5sxs.onrender.com/api/cart/${id}`);
       setCart(cart.filter((item) => item._id !== id));
     } catch (error) {
       console.error("Error removing item:", error);
@@ -185,3 +185,4 @@ function CartPage() {
 }
 
 export default CartPage;
+
