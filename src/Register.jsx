@@ -28,7 +28,7 @@ const Register = () => {
     }
 
     try {
-      const url = "http://localhost:8081/api/register";
+      const url = "https://backend-3-5sxs.onrender.com/api/register";
       const response = await fetch(url, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -124,3 +124,4 @@ const Register = () => {
 };
 
 export default Register;
+
