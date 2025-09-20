@@ -23,7 +23,7 @@ const ProductDetails = () => {
 
   const handleAddToCart = async (productId) => {
     try {
-      await axios.post(`http://localhost:8081/api/cart`, {
+      await axios.post(`https://backend-3-5sxs.onrender.com/api/cart`, {
         productId,
         quantity: 1
       });
@@ -79,4 +79,5 @@ const ProductDetails = () => {
 };
 
 export default ProductDetails;
+
 
