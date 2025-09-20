@@ -78,7 +78,7 @@ function BuyNowPage() {
 
     try {
       // Create order in backend
-      const orderResponse = await fetch("http://localhost:8081/create-order", {
+      const orderResponse = await fetch("https://backend-3-5sxs.onrender.com/create-order", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ amount: product.price * quantity * 100 }), // paise
@@ -166,4 +166,5 @@ function BuyNowPage() {
 }
 
 export default BuyNowPage;
+
 
