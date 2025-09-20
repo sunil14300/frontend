@@ -30,7 +30,7 @@ function BuyNowPage() {
     const fetchProduct = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8081/api/products/${productId}`
+          `https://backend-3-5sxs.onrender.com/api/products/${productId}`
         );
         setProduct(response.data);
       } catch (error) {
@@ -166,3 +166,4 @@ function BuyNowPage() {
 }
 
 export default BuyNowPage;
+
