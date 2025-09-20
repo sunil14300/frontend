@@ -12,7 +12,7 @@ const ViewDetails = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await fetch(`http://localhost:8081/api/products/${id}`);
+        const response = await fetch(`https://backend-3-5sxs.onrender.com/api/products/${id}`);
         if (!response.ok) throw new Error("Failed to fetch product details");
         const data = await response.json();
         setProduct(data);
@@ -25,7 +25,7 @@ const ViewDetails = () => {
 
   const handleAddToCart = async (productId) => {
     try {
-      await axios.post(`http://localhost:8081/api/cart`, {
+      await axios.post(`https://backend-3-5sxs.onrender.com/api/cart`, {
         productId,
         quantity: 1,
       });
@@ -82,3 +82,4 @@ const ViewDetails = () => {
 };
 
 export default ViewDetails;
+
