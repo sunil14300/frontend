@@ -9,7 +9,7 @@ export const CartProvider = ({ children }) => {
   // Fetch cart count
   const fetchCartCount = async () => {
     try {
-      const res = await axios.get("http://localhost:8081/api/cart");
+      const res = await axios.get("https://backend-3-5sxs.onrender.com/api/cart");
       console.log("Fetched cart items:", res.data); // Log the fetched items
       setCartCount(res.data.length); // Count number of items
     } catch (error) {
@@ -28,4 +28,5 @@ export const CartProvider = ({ children }) => {
     </CartContext.Provider>
   );
 };
+
  
