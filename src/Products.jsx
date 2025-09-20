@@ -8,7 +8,7 @@ const Products = () => {
   // Fetch products from backend
   const fetchProducts = async () => {
     try {
-      const response = await fetch("http://localhost:8081/api/products");
+      const response = await fetch("https://backend-3-5sxs.onrender.com/api/products");
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
@@ -60,3 +60,4 @@ const Products = () => {
 };
 
 export default Products;
+
