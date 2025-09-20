@@ -90,7 +90,7 @@ function CartPage() {
     }
 
     try {
-      const orderResponse = await fetch("http://localhost:8081/create-order", {
+      const orderResponse = await fetch("https://backend-3-5sxs.onrender.com/create-order", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ amount: total * 100 }), // in paise
@@ -185,4 +185,5 @@ function CartPage() {
 }
 
 export default CartPage;
+
 
