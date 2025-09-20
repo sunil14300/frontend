@@ -1,0 +1,86 @@
+/* Reduce the height of the carousel */
+.custom-carousel .carousel-inner {
+    height: 250px; /* Adjust height to match Flipkart-style */
+  }
+  
+  /* Style for images to fit nicely */
+  .carousel-image {
+    object-fit: cover;
+    height: 400px; /* Match carousel height */
+  }
+  
+  /* Positioning text similar to Flipkart style */
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: #000;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    padding: 10px 20px;
+    border-radius: 10px;
+    max-width: 400px;
+  }
+  
+  /* Button styling */
+  .carousel-caption .btn {
+    margin-top: 10px;
+    background-color: #2874f0;
+    border: none;
+  }
+  
+  .carousel-caption .btn:hover {
+    background-color: #174ab0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .custom-carousel .carousel-inner {
+      height: 250px; /* Adjust for smaller screens */
+    }
+  
+    .carousel-image {
+      height: 250px;
+    }
+  
+    .carousel-caption {
+      max-width: 300px;
+      top: 50%;
+      left: 10%;
+    }
+  }
+  
+  .carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}

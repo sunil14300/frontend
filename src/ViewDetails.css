@@ -1,0 +1,142 @@
+/* Main Wrapper */
+.product-details-wrapper {
+  background: #f9fafb;
+  padding: 2rem;
+}
+
+/* Main Container */
+.product-details-container {
+  display: flex;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  align-items: flex-start;
+}
+
+/* Product Image */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+}
+
+/* Product Info */
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.product-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.product-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Price Section */
+.price-section {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00796b;
+}
+
+.discount-tag {
+  background: #f57c00;
+  color: #fff;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  /* flex: 1; */
+  text-align: center;
+  padding: 0.9rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart {
+  background-color: #00796b;
+  color: white;
+}
+
+.add-to-cart:hover {
+  background-color: #005a4f;
+}
+
+.btn-buy {
+  background-color: #f57c00;
+  color: white;
+}
+
+.btn-buy:hover {
+  background-color: #d86900;
+}
+
+/* Loading */
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 3rem 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .product-details-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container {
+    margin-bottom: 1.5rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+}
