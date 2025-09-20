@@ -14,7 +14,7 @@ function CategoryPage() {
     const fetchCategoryProducts = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8081/api/products/category/${categoryName}`
+          `https://backend-3-5sxs.onrender.com/api/products/category/${categoryName}`
         );
         setProducts(response.data);
       } catch (error) {
@@ -83,4 +83,5 @@ function CategoryPage() {
 }
 
 export default CategoryPage;
+
 
