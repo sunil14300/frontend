@@ -20,7 +20,7 @@ const ProductForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const response = await fetch('http://localhost:8081/api/products', {
+      const response = await fetch('https://backend-3-5sxs.onrender.com/api/products', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -56,3 +56,4 @@ const ProductForm = () => {
 }
 
 export default ProductForm;
+
